@@ -84,6 +84,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_GRAVE";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_GRAVE>, <&kp>;
 		};
@@ -92,6 +93,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N1";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N1>, <&kp>;
 		};
@@ -100,6 +102,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N2";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N2>, <&kp>;
 		};
@@ -108,6 +111,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N3";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N3>, <&kp>;
 		};
@@ -116,6 +120,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N4";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N4>, <&kp>;
 		};
@@ -124,6 +129,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N5";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N5>, <&kp>;
 		};
@@ -132,6 +138,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N6";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N6>, <&kp>;
 		};
@@ -140,6 +147,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N7";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N7>, <&kp>;
 		};
@@ -148,6 +156,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N8";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N8>, <&kp>;
 		};
@@ -156,6 +165,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N9";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N9>, <&kp>;
 		};
@@ -164,6 +174,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N0";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N0>, <&kp>;
 		};
@@ -172,6 +183,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_MINUS";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_MINUS>, <&kp>;
 		};
@@ -180,6 +192,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_EQUAL";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_EQUAL>, <&kp>;
 		};
@@ -188,6 +201,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_Q";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_Q>, <&kp>;
 		};
@@ -196,6 +210,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_W";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_W>, <&kp>;
 		};
@@ -204,6 +219,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_E";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_E>, <&kp>;
 		};
@@ -212,6 +228,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_R";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_R>, <&kp>;
 		};
@@ -220,6 +237,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_T";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_T>, <&kp>;
 		};
@@ -228,6 +246,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_SQT";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_SQT>, <&kp>;
 		};
@@ -236,6 +255,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_Y";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_Y>, <&kp>;
 		};
@@ -244,6 +264,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_U";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_U>, <&kp>;
 		};
@@ -252,6 +273,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_I";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_I>, <&kp>;
 		};
@@ -260,6 +282,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_O";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_O>, <&kp>;
 		};
@@ -268,6 +291,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_P";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_P>, <&kp>;
 		};
@@ -276,6 +300,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_A";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_A>, <&kp>;
 		};
@@ -284,6 +309,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_S";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_S>, <&kp>;
 		};
@@ -292,6 +318,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_D";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_D>, <&kp>;
 		};
@@ -300,6 +327,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_F";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_F>, <&kp>;
 		};
@@ -308,6 +336,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_G";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_G>, <&kp>;
 		};
@@ -316,6 +345,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_LBKT";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_LBKT>, <&kp>;
 		};
@@ -324,6 +354,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_RBKT";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_RBKT>, <&kp>;
 		};
@@ -332,6 +363,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_H";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_H>, <&kp>;
 		};
@@ -340,6 +372,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_J";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_J>, <&kp>;
 		};
@@ -348,6 +381,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_K";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_K>, <&kp>;
 		};
@@ -356,6 +390,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_L";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_L>, <&kp>;
 		};
@@ -364,6 +399,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_SEMI";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_SEMI>, <&kp>;
 		};
@@ -372,6 +408,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_Z";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_Z>, <&kp>;
 		};
@@ -380,6 +417,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_X";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_X>, <&kp>;
 		};
@@ -388,6 +426,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_C";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_C>, <&kp>;
 		};
@@ -396,6 +435,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_V";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_V>, <&kp>;
 		};
@@ -404,6 +444,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_B";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_B>, <&kp>;
 		};
@@ -412,6 +453,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_N";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_N>, <&kp>;
 		};
@@ -420,6 +462,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_M";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_M>, <&kp>;
 		};
@@ -428,6 +471,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_COMMA";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_COMMA>, <&kp>;
 		};
@@ -436,6 +480,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_DOT";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_DOT>, <&kp>;
 		};
@@ -444,6 +489,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_SLASH";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_SLASH>, <&kp>;
 		};
@@ -452,27 +498,19 @@ DEFINE_SHIFT_MACRO(BSLH)
 			flavor = "tap-preferred";
 			label = "AUTOSHIFT_BSLH";
 			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
 			#binding-cells = <2>;
 			bindings = <&shift_BSLH>, <&kp>;
 		};
 
-    	// sticky cmd
-		skq: sticky_key_quick_release {
-			compatible = "zmk,behavior-sticky-key";
-			label = "STICKY_KEY_QUICK_RELEASE";
-			#binding-cells = <1>;
-			bindings = <&kp>;
-			release-after-ms = <200>;
-			quick-release;
-		};
-
-		// tap-hold where the hold is sticky
-		sth: sticky_tap_hold {
+		// tap-hold where the hold is 
+		th: tap_hold {
 			compatible = "zmk,behavior-hold-tap";
-			label = "STICKY_TAP_HOLD";
+			flavor = "tap-preferred";
+			label = "TAP_HOLD";
 			tapping-term-ms = <100>;
 			#binding-cells = <2>;
-			bindings = <&skq>, <&kp>;
+			bindings = <&kp>, <&kp>;
 		};
 	};
 
@@ -492,7 +530,7 @@ AS(  GRAVE ) AS(    N1 ) AS(   N2 ) AS(  N3 ) AS(   N4 ) AS(    N5 ) AS(        
 &kp    TAB   AS(     Q ) AS(    W ) AS(   E ) AS(    R ) AS(     T ) AS(        SQT ) AS(       SQT ) AS(     Y ) AS(   U ) AS(     I ) AS(     O ) AS(     P ) AS(    BSLH )
 &kp    ESC   AS(     A ) AS(    S ) AS(   D ) AS(    F ) AS(     G ) AS(       LBKT ) AS(      RBKT ) AS(     H ) AS(   J ) AS(     K ) AS(     L ) AS(  SEMI ) &kp   ENTER
 &kp LSHIFT   AS(     Z ) AS(    X ) AS(   C ) AS(    V ) AS(     B ) &kp  LG( SPACE ) &kp LG( SPACE ) AS(     N ) AS(   M ) AS( COMMA ) AS(   DOT ) AS( SLASH ) &kp  RSHIFT  
-&skq LCTRL   &skq LALT   &kp RG(X) &kp RG(C)  &kp RG(V)  &kp SPACE   &sth LCMD LG(S)  &skq     RCMD   &kp SPACE   &mo  FN   &kp  LEFT   &kp    UP   &kp  DOWN   &kp   RIGHT
+&kp  LCTRL   &kp  LALT   &kp RG(X) &kp RG(C)  &kp RG(V)  &kp SPACE   &th  LCMD LG(S)  &kp      RCMD   &kp SPACE   &mo  FN   &kp  LEFT   &kp    UP   &kp  DOWN   &kp   RIGHT
 			>;
 		};
 		function {
