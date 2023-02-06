@@ -530,16 +530,16 @@ AS(  GRAVE ) AS(    N1 ) AS(   N2 ) AS(  N3 ) AS(   N4 ) AS(    N5 ) AS(        
 &kp    TAB   AS(     Q ) AS(    W ) AS(   E ) AS(    R ) AS(     T ) AS(        SQT ) AS(       SQT ) AS(     Y ) AS(   U ) AS(     I ) AS(     O ) AS(     P ) AS(    BSLH )
 &kp    ESC   AS(     A ) AS(    S ) AS(   D ) AS(    F ) AS(     G ) AS(       LBKT ) AS(      RBKT ) AS(     H ) AS(   J ) AS(     K ) AS(     L ) AS(  SEMI ) &kp   ENTER
 &kp LSHIFT   AS(     Z ) AS(    X ) AS(   C ) AS(    V ) AS(     B ) &kp  LG( SPACE ) &kp LG( SPACE ) AS(     N ) AS(   M ) AS( COMMA ) AS(   DOT ) AS( SLASH ) &kp  RSHIFT  
-&kp  LCTRL   &kp  LALT   &kp RG(X) &kp RG(C)  &kp RG(V)  &kp SPACE   &th  LCMD LG(S)  &kp      RCMD   &kp SPACE   &mo  FN   &kp  LEFT   &kp    UP   &kp  DOWN   &kp   RIGHT
+&kp  LCTRL   &kp  LALT   &kp RG(X) &kp RG(C)  &kp RG(V)  &kp SPACE   &th  LCMD LG(S)  &kp      RCMD   &kp SPACE   &mo  FN   &kp  LEFT   &kp  DOWN   &kp    UP   &kp   RIGHT
 			>;
 		};
 		function {
 			bindings = <
-&kp K_PWR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp ESC &kp ESC &kp  ESC &kp    ESC &kp    ESC &bt   BT_PRV &bt   BT_NXT &bt BT_CLR
-&kp   ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp ESC &kp ESC &kp  ESC &kp    ESC &kp    ESC &kp      ESC &kp      ESC &kp    ESC
-&kp   ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp ESC &kp ESC &kp  ESC &kp    ESC &kp    ESC &kp      ESC &kp      ESC &kp    ESC
-&kp   ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp ESC &kp ESC &kp  ESC &kp C_MUTE &kp    ESC &kp      ESC &kp      ESC &kp    ESC
-&kp   ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp     C_PP &kp ESC &kp ESC &kp C_PP &kp    ESC &kp C_PREV &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT
+&kp  K_PWR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp  ESC &kp  ESC &kp  ESC &kp    ESC &kp    ESC &bt   BT_PRV &bt   BT_NXT &bt BT_CLR
+&kp    ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp  ESC &kp  ESC &kp  ESC &kp    ESC &kp    ESC &kp      ESC &kp      ESC &kp    ESC
+&kp    ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp  ESC &kp  ESC &kp  ESC &kp    ESC &kp    ESC &kp      ESC &kp      ESC &kp    ESC
+&kt LSHIFT &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp      ESC &kp  ESC &kp  ESC &kp  ESC &kp C_MUTE &kp    ESC &kp      ESC &kp      ESC &kt RSHIFT
+&kt  LCTRL &kt     LALT &kp      ESC &kp      ESC &kp      ESC &kp     C_PP &kt LCMD &kt RCMD &kp C_PP &kp    ESC &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
 			>;
 		};
 	};
