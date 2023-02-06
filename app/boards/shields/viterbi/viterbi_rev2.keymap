@@ -13,8 +13,6 @@
 
 
 #define AS(CODE)  &as_##CODE CODE CODE  // Autoshift
-#define TC(CODE)  &tc_##CODE   // Tap-Caps
-#define SKQ(CODE) &skq CODE    // Stickykeys
 
 #define DEFINE_SHIFT_MACRO(CODE) \ 
 / { \
@@ -76,11 +74,6 @@ DEFINE_SHIFT_MACRO(COMMA) \
 DEFINE_SHIFT_MACRO(DOT) \
 DEFINE_SHIFT_MACRO(SLASH) \
 DEFINE_SHIFT_MACRO(BSLH) 
-
-
-&mt {
-    tapping-term-ms = <100>;
-};
 
 
 / {
@@ -481,24 +474,6 @@ DEFINE_SHIFT_MACRO(BSLH)
 			#binding-cells = <2>;
 			bindings = <&skq>, <&kp>;
 		};
-
-		// tapdance capslock on shift keys
-		
-		tc_LSHIFT: tapcaps_LSHIFT {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_CAPS_LSHIFT";
-			tapping-term-ms = <300>;
-			#binding-cells = <0>;
-			bindings = <&skq LSHIFT>, <&kp CAPSLOC
-		};
-		tc_RSHIFT: tapcaps_RSHIFT {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_CAPS_RSHIFT";
-			tapping-term-ms = <300>;
-			#binding-cells = <0>;
-			bindings = <&skq RSHIFT>, <&kp CAPSLOCK>;
-		};
-
 	};
 
 	keymap {
@@ -516,7 +491,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 AS(  GRAVE ) AS(    N1 ) AS(   N2 ) AS(  N3 ) AS(   N4 ) AS(    N5 ) AS(         N6 ) AS(        N7 ) AS(    N8 ) AS(  N9 ) AS(    N0 ) AS( MINUS ) AS( EQUAL ) &kp    BSPC
 &kp    TAB   AS(     Q ) AS(    W ) AS(   E ) AS(    R ) AS(     T ) AS(        SQT ) AS(       SQT ) AS(     Y ) AS(   U ) AS(     I ) AS(     O ) AS(     P ) AS(    BSLH )
 &kp    ESC   AS(     A ) AS(    S ) AS(   D ) AS(    F ) AS(     G ) AS(       LBKT ) AS(      RBKT ) AS(     H ) AS(   J ) AS(     K ) AS(     L ) AS(  SEMI ) &kp   ENTER
-TC( LSHIFT ) AS(     Z ) AS(    X ) AS(   C ) AS(    V ) AS(     B ) &kp   LG(SPACE)  &kp  LG(SPACE)  AS(     N ) AS(   M ) AS( COMMA ) AS(   DOT ) AS( SLASH ) TC(  RSHIFT )
+&kp LSHIFT   AS(     Z ) AS(    X ) AS(   C ) AS(    V ) AS(     B ) &kp  LG( SPACE ) &kp LG( SPACE ) AS(     N ) AS(   M ) AS( COMMA ) AS(   DOT ) AS( SLASH ) &kp  RSHIFT  
 &skq LCTRL   &skq LALT   &kp RG(X) &kp RG(C)  &kp RG(V)  &kp SPACE   &sth LCMD LG(S)  &skq     RCMD   &kp SPACE   &mo  FN   &kp  LEFT   &kp    UP   &kp  DOWN   &kp   RIGHT
 			>;
 		};
