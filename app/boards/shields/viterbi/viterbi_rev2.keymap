@@ -506,7 +506,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 		// tap-hold where the hold is 
 		th: tap_hold {
 			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
+			flavor = "hold-preferred";
 			label = "TAP_HOLD";
 			tapping-term-ms = <100>;
 			#binding-cells = <2>;
@@ -523,7 +523,7 @@ DEFINE_SHIFT_MACRO(BSLH)
 // |    TAB |    Q |    W |    E |     R |    T |     ' |     ' |    Y |   U |     I |     O |     P |      \ |
 // |    ESC |    A |    S |    D |     F |    G |     [ |     ] |    H |   J |     K |     L |     ; |  ENTER |
 // | LSHIFT |    Z |    X |    C |     V |    B |  SAVE | SPTLT |    N |   M |     , |     . |     / | RSHIFT |
-// |  LCTRL | LALT |  CUT | COPY | PASTE | LCMD | SPACE | SPACE | LCMD | ESC |  LEFT |    UP |  DOWN |  RIGHT |
+// |  LCTRL | LALT |  CUT | COPY | PASTE | LCMD | SPACE | SPACE | LCMD |  FN |  LEFT |    UP |  DOWN |  RIGHT |
 // -------------------------------------------------------------------------------------------------------------
 			bindings = < 
 AS(  GRAVE ) AS(    N1 ) AS(   N2 ) AS(  N3 ) AS(   N4 ) AS(    N5 ) AS(         N6 ) AS(        N7 ) AS(    N8 ) AS(  N9 ) AS(    N0 ) AS( MINUS ) AS( EQUAL ) &kp    BSPC
