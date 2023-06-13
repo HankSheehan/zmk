@@ -12,8 +12,6 @@
 #define DFLT    0
 #define FN      1
 #define NAV     2
-#define NUM     3
-
 
 #define AS(CODE) &as_##CODE CODE CODE  // Autoshift
 
