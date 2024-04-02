@@ -84,7 +84,6 @@ DEFINE_SHIFT_MACRO(FSLH)
     	as_GRAVE: autoshift_GRAVE {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_GRAVE";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -93,7 +92,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N1: autoshift_N1 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N1";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -102,7 +100,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N2: autoshift_N2 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N2";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -111,7 +108,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N3: autoshift_N3 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N3";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -120,7 +116,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N4: autoshift_N4 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N4";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -129,7 +124,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N5: autoshift_N5 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N5";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -138,7 +132,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N6: autoshift_N6 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N6";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -147,7 +140,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N7: autoshift_N7 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N7";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -156,7 +148,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N8: autoshift_N8 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N8";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -165,7 +156,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N9: autoshift_N9 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N9";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -174,7 +164,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N0: autoshift_N0 {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N0";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -183,7 +172,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_MINUS: autoshift_MINUS {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_MINUS";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -192,7 +180,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_EQUAL: autoshift_EQUAL {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_EQUAL";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -201,7 +188,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_Q: autoshift_Q {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_Q";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -210,7 +196,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_W: autoshift_W {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_W";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -219,7 +204,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_E: autoshift_E {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_E";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -228,7 +212,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_R: autoshift_R {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_R";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -237,7 +220,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_T: autoshift_T {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_T";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -246,7 +228,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_SQT: autoshift_SQT {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_SQT";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -255,7 +236,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_Y: autoshift_Y {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_Y";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -264,7 +244,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_U: autoshift_U {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_U";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -273,7 +252,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_I: autoshift_I {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_I";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -282,7 +260,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_O: autoshift_O {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_O";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -291,7 +268,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_P: autoshift_P {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_P";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -300,7 +276,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_A: autoshift_A {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_A";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -309,7 +284,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_S: autoshift_S {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_S";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -318,7 +292,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_D: autoshift_D {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_D";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -327,7 +300,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_F: autoshift_F {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_F";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -336,7 +308,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_G: autoshift_G {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_G";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -345,7 +316,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_LBKT: autoshift_LBKT {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_LBKT";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -354,7 +324,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_RBKT: autoshift_RBKT {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_RBKT";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -363,7 +332,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_H: autoshift_H {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_H";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -372,7 +340,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_J: autoshift_J {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_J";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -381,7 +348,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_K: autoshift_K {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_K";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -390,7 +356,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_L: autoshift_L {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_L";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -399,7 +364,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_SEMI: autoshift_SEMI {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_SEMI";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -408,7 +372,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_Z: autoshift_Z {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_Z";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -417,7 +380,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_X: autoshift_X {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_X";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -426,7 +388,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_C: autoshift_C {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_C";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -435,7 +396,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_V: autoshift_V {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_V";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -444,7 +404,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_B: autoshift_B {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_B";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -453,7 +412,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_N: autoshift_N {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_N";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -462,7 +420,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_M: autoshift_M {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_M";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -471,7 +428,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_COMMA: autoshift_COMMA {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_COMMA";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -480,7 +436,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_DOT: autoshift_DOT {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_DOT";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -489,7 +444,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_SLASH: autoshift_SLASH {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_SLASH";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -498,7 +452,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		as_BSLH: autoshift_BSLH {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_BSLH";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -508,7 +461,6 @@ DEFINE_SHIFT_MACRO(FSLH)
         as_FSLH: autoshift_FSLH {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "tap-preferred";
-			label = "AUTOSHIFT_FSLH";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <300>;
 			#binding-cells = <2>;
@@ -519,7 +471,6 @@ DEFINE_SHIFT_MACRO(FSLH)
 		th: tap_hold {
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "hold-preferred";
-			label = "TAP_HOLD";
 			tapping-term-ms = <100>;
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
@@ -530,6 +481,7 @@ DEFINE_SHIFT_MACRO(FSLH)
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "QWERTY";
 // ------------------------------------------------------------------------------------------------------------
 // |   1   |  2  |  3  |  4   |  5   |  6    |                   |  7   |  8    |  9    |  0   |   -   |   =   |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T    |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -547,6 +499,7 @@ AS(    N1 ) AS( N2 ) AS( N3 ) AS(    N4 ) AS(   N5 ) AS(    N6 )                
         };
 
         bluetooth_layer {
+            display-name = "Bluetooth";
             bindings = <
 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                    &trans     &trans       &trans       &trans     &ext_power EP_OFF &ext_power EP_ON
 &trans       &trans       &trans       &trans       &trans       &trans                          &trans     &trans       &trans       &trans     &trans            &trans
@@ -557,6 +510,7 @@ AS(    N1 ) AS( N2 ) AS( N3 ) AS(    N4 ) AS(   N5 ) AS(    N6 )                
         };
 
         navigation_layer {
+            display-name = "Navigation";
             bindings = <
 &trans      &trans &trans &trans &trans &trans               &trans   &trans   &trans &trans    &trans &trans
 &trans      &trans &trans &trans &trans &trans               &trans   &trans   &trans &trans    &trans &trans
@@ -567,6 +521,7 @@ AS( GRAVE ) &trans &trans &trans &trans &trans               &kp LEFT &kp DOWN &
         };
 
         magnet_layer {
+            display-name = "Magnet";
             bindings = <
 &trans &trans &trans &trans         &trans         &trans                         &trans           &trans           &trans         &trans            &trans &trans
 &trans &trans &trans &kp LC(LA(E))  &trans         &kp LC(LA(T))                  &trans           &trans           &trans         &trans            &trans &trans
