@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define DFLT    0
-#define FN      1
+#define BT      1
 #define NAV     2
 #define MAG     3
 
@@ -531,18 +531,48 @@ DEFINE_SHIFT_MACRO(FSLH)
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+// |   1   |  2  |  3  |  4   |  5   |  6    |                   |  7   |  8    |  9    |  0   |   -   |   =   |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T    |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+// |  ESC  |  A  |  S  |  D   |  F   |  G    |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B    |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                     | CTRL | ALT  | SPACE |  GUI   |  |  NAV  | BSPC | MAG   | BT    |
             bindings = <
 AS(    N1 ) AS( N2 ) AS( N3 ) AS(    N4 ) AS(   N5 ) AS(    N6 )                       AS(  N7 ) AS(  N8 ) AS(    N9 ) AS(  N0 ) AS( MINUS ) AS( EQUAL )
 &kp   TAB   AS(  Q ) AS(  W ) AS(     E ) AS(    R ) AS(     T )                       AS(   Y ) AS(   U ) AS(     I ) AS(   O ) AS(     P ) AS(  BSLH )
-AS( GRAVE ) AS(  A ) AS(  S ) AS(     D ) AS(    F ) AS(     G )                       AS(   H ) AS(   J ) AS(     K ) AS(   L ) AS(  SEMI ) AS(   SQT )
+&kp   ESC   AS(  A ) AS(  S ) AS(     D ) AS(    F ) AS(     G )                       AS(   H ) AS(   J ) AS(     K ) AS(   L ) AS(  SEMI ) AS(   SQT )
 &kp LSHFT   AS(  Z ) AS(  X ) AS(     C ) AS(    V ) AS(     B ) AS( LBKT ) AS( RBKT ) AS(   N )  AS(  M ) AS( COMMA ) AS( DOT ) AS(  FSLH ) &kp   RET 
 
-                                            &kp LCTRL &kp LALT &kp SPACE &mt LGUI LG(SPACE) &mo  NAV &kp BSPC  &mo MAG &mo FN
+                &kp LCTRL &kp LALT &kp SPACE &mt LGUI LG(SPACE)  &mo NAV &kp BSPC &mo MAG &mo BT
+            >;
+        };
+
+        bluetooth_layer {
+            bindings = <
+&trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                            &trans &trans &trans &trans &trans &trans
+            >;
+        };
+
+        navigation_layer {
+            bindings = <
+&trans      &trans &trans &trans &trans &trans               &trans   &trans   &trans &trans    &trans &trans
+&trans      &trans &trans &trans &trans &trans               &trans   &trans   &trans &trans    &trans &trans
+AS( GRAVE ) &trans &trans &trans &trans &trans               &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+&trans      &trans &trans &trans &trans &trans &trans &trans &trans   &trans   &trans &trans    &trans &trans
+                             &trans &trans &trans &trans &kp LC(LALT)   &trans
+            >;
+        };
+
+        magnet_layer {
+            bindings = <
+&trans &trans &trans &trans         &trans         &trans                         &trans           &trans           &trans         &trans            &trans &trans
+&trans &trans &trans &kp LC(LA(E))  &trans         &kp LC(LA(T))                  &trans           &trans           &trans         &trans            &trans &trans
+&trans &trans &trans &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))                  &kp LC(LA(LEFT)) &kp LC(LA(DOWN)) &kp LC(LA(UP)) &kp LC(LA(RIGHT)) &trans &trans
+&trans &trans &trans &kp LC(LA(C))  &trans         &trans         &trans  &trans  &trans           &trans           &trans         &trans            &trans &kp LC(LA(RET))
+                                                   &trans  &trans &trans  &trans  &kp LC(LALT)     &trans
             >;
         };
     };
