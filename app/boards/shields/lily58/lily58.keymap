@@ -16,7 +16,7 @@
 
 #define AS(CODE) &as_##CODE CODE CODE  // Autoshift
 
-#define DEFINE_SHIFT_MACRO(CODE) \
+#define DEFINE_AUTOSHIFT(CODE) \
 / { \
 	macros { \
 		ZMK_MACRO( \
@@ -26,456 +26,69 @@
 			bindings = <&macro_tap &kp LS(CODE)>; \
 		) \
 	}; \
+    behaviors { \
+    	as_##CODE: autoshift_##CODE { \
+			compatible = "zmk,behavior-hold-tap"; \
+			flavor = "tap-preferred"; \
+			tapping-term-ms = <200>; \
+			quick-tap-ms = <300>; \
+			#binding-cells = <2>; \
+			bindings = <&shift_##CODE>, <&kp>; \
+		}; \
+    }; \
 };
 
 // Define the macros needed for autoshifting
-DEFINE_SHIFT_MACRO(GRAVE) \
-DEFINE_SHIFT_MACRO(N1) \
-DEFINE_SHIFT_MACRO(N2) \
-DEFINE_SHIFT_MACRO(N3) \
-DEFINE_SHIFT_MACRO(N4) \
-DEFINE_SHIFT_MACRO(N5) \
-DEFINE_SHIFT_MACRO(N6) \
-DEFINE_SHIFT_MACRO(N7) \
-DEFINE_SHIFT_MACRO(N8) \
-DEFINE_SHIFT_MACRO(N9) \
-DEFINE_SHIFT_MACRO(N0) \
-DEFINE_SHIFT_MACRO(MINUS) \
-DEFINE_SHIFT_MACRO(EQUAL) \
-DEFINE_SHIFT_MACRO(Q) \
-DEFINE_SHIFT_MACRO(W) \
-DEFINE_SHIFT_MACRO(E) \
-DEFINE_SHIFT_MACRO(R) \
-DEFINE_SHIFT_MACRO(T) \
-DEFINE_SHIFT_MACRO(SQT) \
-DEFINE_SHIFT_MACRO(Y) \
-DEFINE_SHIFT_MACRO(U) \
-DEFINE_SHIFT_MACRO(I) \
-DEFINE_SHIFT_MACRO(O) \
-DEFINE_SHIFT_MACRO(P) \
-DEFINE_SHIFT_MACRO(A) \
-DEFINE_SHIFT_MACRO(S) \
-DEFINE_SHIFT_MACRO(D) \
-DEFINE_SHIFT_MACRO(F) \
-DEFINE_SHIFT_MACRO(G) \
-DEFINE_SHIFT_MACRO(LBKT) \
-DEFINE_SHIFT_MACRO(RBKT) \
-DEFINE_SHIFT_MACRO(H) \
-DEFINE_SHIFT_MACRO(J) \
-DEFINE_SHIFT_MACRO(K) \
-DEFINE_SHIFT_MACRO(L) \
-DEFINE_SHIFT_MACRO(SEMI) \
-DEFINE_SHIFT_MACRO(Z) \
-DEFINE_SHIFT_MACRO(X) \
-DEFINE_SHIFT_MACRO(C) \
-DEFINE_SHIFT_MACRO(V) \
-DEFINE_SHIFT_MACRO(B) \
-DEFINE_SHIFT_MACRO(N) \
-DEFINE_SHIFT_MACRO(M) \
-DEFINE_SHIFT_MACRO(COMMA) \
-DEFINE_SHIFT_MACRO(DOT) \
-DEFINE_SHIFT_MACRO(SLASH) \
-DEFINE_SHIFT_MACRO(BSLH) \
-DEFINE_SHIFT_MACRO(FSLH)
+DEFINE_AUTOSHIFT(GRAVE) \
+DEFINE_AUTOSHIFT(N1) \
+DEFINE_AUTOSHIFT(N2) \
+DEFINE_AUTOSHIFT(N3) \
+DEFINE_AUTOSHIFT(N4) \
+DEFINE_AUTOSHIFT(N5) \
+DEFINE_AUTOSHIFT(N6) \
+DEFINE_AUTOSHIFT(N7) \
+DEFINE_AUTOSHIFT(N8) \
+DEFINE_AUTOSHIFT(N9) \
+DEFINE_AUTOSHIFT(N0) \
+DEFINE_AUTOSHIFT(MINUS) \
+DEFINE_AUTOSHIFT(EQUAL) \
+DEFINE_AUTOSHIFT(Q) \
+DEFINE_AUTOSHIFT(W) \
+DEFINE_AUTOSHIFT(E) \
+DEFINE_AUTOSHIFT(R) \
+DEFINE_AUTOSHIFT(T) \
+DEFINE_AUTOSHIFT(SQT) \
+DEFINE_AUTOSHIFT(Y) \
+DEFINE_AUTOSHIFT(U) \
+DEFINE_AUTOSHIFT(I) \
+DEFINE_AUTOSHIFT(O) \
+DEFINE_AUTOSHIFT(P) \
+DEFINE_AUTOSHIFT(A) \
+DEFINE_AUTOSHIFT(S) \
+DEFINE_AUTOSHIFT(D) \
+DEFINE_AUTOSHIFT(F) \
+DEFINE_AUTOSHIFT(G) \
+DEFINE_AUTOSHIFT(LBKT) \
+DEFINE_AUTOSHIFT(RBKT) \
+DEFINE_AUTOSHIFT(H) \
+DEFINE_AUTOSHIFT(J) \
+DEFINE_AUTOSHIFT(K) \
+DEFINE_AUTOSHIFT(L) \
+DEFINE_AUTOSHIFT(SEMI) \
+DEFINE_AUTOSHIFT(Z) \
+DEFINE_AUTOSHIFT(X) \
+DEFINE_AUTOSHIFT(C) \
+DEFINE_AUTOSHIFT(V) \
+DEFINE_AUTOSHIFT(B) \
+DEFINE_AUTOSHIFT(N) \
+DEFINE_AUTOSHIFT(M) \
+DEFINE_AUTOSHIFT(COMMA) \
+DEFINE_AUTOSHIFT(DOT) \
+DEFINE_AUTOSHIFT(SLASH) \
+DEFINE_AUTOSHIFT(BSLH) \
+DEFINE_AUTOSHIFT(FSLH)
 
 / {
-    behaviors {
-
-    	as_GRAVE: autoshift_GRAVE {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_GRAVE>, <&kp>;
-		};
-		as_N1: autoshift_N1 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N1>, <&kp>;
-		};
-		as_N2: autoshift_N2 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N2>, <&kp>;
-		};
-		as_N3: autoshift_N3 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N3>, <&kp>;
-		};
-		as_N4: autoshift_N4 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N4>, <&kp>;
-		};
-		as_N5: autoshift_N5 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N5>, <&kp>;
-		};
-		as_N6: autoshift_N6 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N6>, <&kp>;
-		};
-		as_N7: autoshift_N7 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N7>, <&kp>;
-		};
-		as_N8: autoshift_N8 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N8>, <&kp>;
-		};
-		as_N9: autoshift_N9 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N9>, <&kp>;
-		};
-		as_N0: autoshift_N0 {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N0>, <&kp>;
-		};
-		as_MINUS: autoshift_MINUS {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_MINUS>, <&kp>;
-		};
-		as_EQUAL: autoshift_EQUAL {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_EQUAL>, <&kp>;
-		};
-		as_Q: autoshift_Q {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_Q>, <&kp>;
-		};
-		as_W: autoshift_W {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_W>, <&kp>;
-		};
-		as_E: autoshift_E {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_E>, <&kp>;
-		};
-		as_R: autoshift_R {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_R>, <&kp>;
-		};
-		as_T: autoshift_T {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_T>, <&kp>;
-		};
-		as_SQT: autoshift_SQT {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_SQT>, <&kp>;
-		};
-		as_Y: autoshift_Y {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_Y>, <&kp>;
-		};
-		as_U: autoshift_U {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_U>, <&kp>;
-		};
-		as_I: autoshift_I {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_I>, <&kp>;
-		};
-		as_O: autoshift_O {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_O>, <&kp>;
-		};
-		as_P: autoshift_P {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_P>, <&kp>;
-		};
-		as_A: autoshift_A {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_A>, <&kp>;
-		};
-		as_S: autoshift_S {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_S>, <&kp>;
-		};
-		as_D: autoshift_D {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_D>, <&kp>;
-		};
-		as_F: autoshift_F {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_F>, <&kp>;
-		};
-		as_G: autoshift_G {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_G>, <&kp>;
-		};
-		as_LBKT: autoshift_LBKT {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_LBKT>, <&kp>;
-		};
-		as_RBKT: autoshift_RBKT {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_RBKT>, <&kp>;
-		};
-		as_H: autoshift_H {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_H>, <&kp>;
-		};
-		as_J: autoshift_J {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_J>, <&kp>;
-		};
-		as_K: autoshift_K {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_K>, <&kp>;
-		};
-		as_L: autoshift_L {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_L>, <&kp>;
-		};
-		as_SEMI: autoshift_SEMI {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_SEMI>, <&kp>;
-		};
-		as_Z: autoshift_Z {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_Z>, <&kp>;
-		};
-		as_X: autoshift_X {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_X>, <&kp>;
-		};
-		as_C: autoshift_C {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_C>, <&kp>;
-		};
-		as_V: autoshift_V {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_V>, <&kp>;
-		};
-		as_B: autoshift_B {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_B>, <&kp>;
-		};
-		as_N: autoshift_N {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_N>, <&kp>;
-		};
-		as_M: autoshift_M {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_M>, <&kp>;
-		};
-		as_COMMA: autoshift_COMMA {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_COMMA>, <&kp>;
-		};
-		as_DOT: autoshift_DOT {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_DOT>, <&kp>;
-		};
-		as_SLASH: autoshift_SLASH {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_SLASH>, <&kp>;
-		};
-		as_BSLH: autoshift_BSLH {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_BSLH>, <&kp>;
-		};
-
-        as_FSLH: autoshift_FSLH {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <300>;
-			#binding-cells = <2>;
-			bindings = <&shift_FSLH>, <&kp>;
-		};
-
-		// tap-hold where the hold is 
-		th: tap_hold {
-			compatible = "zmk,behavior-hold-tap";
-			flavor = "hold-preferred";
-			tapping-term-ms = <100>;
-			#binding-cells = <2>;
-			bindings = <&kp>, <&kp>;
-		};
-	};
 
     keymap {
         compatible = "zmk,keymap";
