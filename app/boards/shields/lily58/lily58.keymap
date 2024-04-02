@@ -75,9 +75,457 @@ DEFINE_SHIFT_MACRO(M) \
 DEFINE_SHIFT_MACRO(COMMA) \
 DEFINE_SHIFT_MACRO(DOT) \
 DEFINE_SHIFT_MACRO(SLASH) \
-DEFINE_SHIFT_MACRO(BSLH) 
+DEFINE_SHIFT_MACRO(BSLH) \
+DEFINE_SHIFT_MACRO(FSLH)
 
 / {
+    behaviors {
+
+    	as_GRAVE: autoshift_GRAVE {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_GRAVE";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_GRAVE>, <&kp>;
+		};
+		as_N1: autoshift_N1 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N1";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N1>, <&kp>;
+		};
+		as_N2: autoshift_N2 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N2";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N2>, <&kp>;
+		};
+		as_N3: autoshift_N3 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N3";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N3>, <&kp>;
+		};
+		as_N4: autoshift_N4 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N4";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N4>, <&kp>;
+		};
+		as_N5: autoshift_N5 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N5";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N5>, <&kp>;
+		};
+		as_N6: autoshift_N6 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N6";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N6>, <&kp>;
+		};
+		as_N7: autoshift_N7 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N7";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N7>, <&kp>;
+		};
+		as_N8: autoshift_N8 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N8";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N8>, <&kp>;
+		};
+		as_N9: autoshift_N9 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N9";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N9>, <&kp>;
+		};
+		as_N0: autoshift_N0 {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N0";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N0>, <&kp>;
+		};
+		as_MINUS: autoshift_MINUS {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_MINUS";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_MINUS>, <&kp>;
+		};
+		as_EQUAL: autoshift_EQUAL {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_EQUAL";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_EQUAL>, <&kp>;
+		};
+		as_Q: autoshift_Q {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_Q";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_Q>, <&kp>;
+		};
+		as_W: autoshift_W {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_W";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_W>, <&kp>;
+		};
+		as_E: autoshift_E {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_E";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_E>, <&kp>;
+		};
+		as_R: autoshift_R {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_R";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_R>, <&kp>;
+		};
+		as_T: autoshift_T {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_T";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_T>, <&kp>;
+		};
+		as_SQT: autoshift_SQT {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_SQT";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_SQT>, <&kp>;
+		};
+		as_Y: autoshift_Y {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_Y";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_Y>, <&kp>;
+		};
+		as_U: autoshift_U {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_U";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_U>, <&kp>;
+		};
+		as_I: autoshift_I {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_I";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_I>, <&kp>;
+		};
+		as_O: autoshift_O {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_O";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_O>, <&kp>;
+		};
+		as_P: autoshift_P {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_P";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_P>, <&kp>;
+		};
+		as_A: autoshift_A {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_A";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_A>, <&kp>;
+		};
+		as_S: autoshift_S {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_S";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_S>, <&kp>;
+		};
+		as_D: autoshift_D {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_D";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_D>, <&kp>;
+		};
+		as_F: autoshift_F {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_F";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_F>, <&kp>;
+		};
+		as_G: autoshift_G {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_G";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_G>, <&kp>;
+		};
+		as_LBKT: autoshift_LBKT {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_LBKT";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_LBKT>, <&kp>;
+		};
+		as_RBKT: autoshift_RBKT {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_RBKT";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_RBKT>, <&kp>;
+		};
+		as_H: autoshift_H {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_H";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_H>, <&kp>;
+		};
+		as_J: autoshift_J {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_J";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_J>, <&kp>;
+		};
+		as_K: autoshift_K {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_K";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_K>, <&kp>;
+		};
+		as_L: autoshift_L {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_L";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_L>, <&kp>;
+		};
+		as_SEMI: autoshift_SEMI {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_SEMI";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_SEMI>, <&kp>;
+		};
+		as_Z: autoshift_Z {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_Z";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_Z>, <&kp>;
+		};
+		as_X: autoshift_X {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_X";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_X>, <&kp>;
+		};
+		as_C: autoshift_C {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_C";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_C>, <&kp>;
+		};
+		as_V: autoshift_V {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_V";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_V>, <&kp>;
+		};
+		as_B: autoshift_B {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_B";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_B>, <&kp>;
+		};
+		as_N: autoshift_N {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_N";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_N>, <&kp>;
+		};
+		as_M: autoshift_M {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_M";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_M>, <&kp>;
+		};
+		as_COMMA: autoshift_COMMA {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_COMMA";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_COMMA>, <&kp>;
+		};
+		as_DOT: autoshift_DOT {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_DOT";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_DOT>, <&kp>;
+		};
+		as_SLASH: autoshift_SLASH {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_SLASH";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_SLASH>, <&kp>;
+		};
+		as_BSLH: autoshift_BSLH {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_BSLH";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_BSLH>, <&kp>;
+		};
+
+        as_FSLH: autoshift_FSLH {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "tap-preferred";
+			label = "AUTOSHIFT_FSLH";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <300>;
+			#binding-cells = <2>;
+			bindings = <&shift_FSLH>, <&kp>;
+		};
+
+		// tap-hold where the hold is 
+		th: tap_hold {
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "hold-preferred";
+			label = "TAP_HOLD";
+			tapping-term-ms = <100>;
+			#binding-cells = <2>;
+			bindings = <&kp>, <&kp>;
+		};
+	};
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -89,50 +537,13 @@ DEFINE_SHIFT_MACRO(BSLH)
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
-&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
-&kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI
+AS(    N1 ) AS( N2 ) AS( N3 ) AS(    N4 ) AS(   N5 ) AS(    N6 )                       AS(  N7 ) AS(  N8 ) AS(    N9 ) AS(  N0 ) AS( MINUS ) AS( EQUAL )
+&kp   TAB   AS(  Q ) AS(  W ) AS(     E ) AS(    R ) AS(     T )                       AS(   Y ) AS(   U ) AS(     I ) AS(   O ) AS(     P ) AS(  BSLH )
+AS( GRAVE ) AS(  A ) AS(  S ) AS(     D ) AS(    F ) AS(     G )                       AS(   H ) AS(   J ) AS(     K ) AS(   L ) AS(  SEMI ) AS(   SQT )
+&kp LSHFT   AS(  Z ) AS(  X ) AS(     C ) AS(    V ) AS(     B ) AS( LBKT ) AS( RBKT ) AS(   N )  AS(  M ) AS( COMMA ) AS( DOT ) AS(  FSLH ) &kp   RET 
+
+                                            &kp LCTRL &kp LALT &kp SPACE &mt LGUI LG(SPACE) &mo  NAV &kp BSPC  &mo MAG &mo FN
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        lower_layer {
-// ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-// |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-//                     |      |      |      |        |  |       |      |       |       |
-            bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans    &trans    &trans
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        raise_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-// |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-//                     |      |      |      |        |  |       |      |       |       |
-            bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
-                        &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
